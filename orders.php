@@ -1,9 +1,8 @@
 <?php
 try{
-    $url = 'localhost2222'; 
+    $url = 'localhost'; 
     $headers = array(
     'Authorization: Bearer TOKEN',
-    'Accept: text/html'
     );
 
     $context = stream_context_create([
