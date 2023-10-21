@@ -5,9 +5,7 @@
     if(isset($_GET['id'])){
         $cliente = $_GET['id'];
     }
-
-    foreach(glob('/var/www/webdav/client_id_'.$cliente.'/') as $file){
-        echo    ''.$file.'';
+    foreach(glob('/var/www/webdav/client_id_'.$cliente.'/*') as $file){
         array_push($files, basename($file));
     }
 
