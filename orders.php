@@ -1,20 +1,20 @@
 <?php
 try{
-    $ch = curl_init(); 
+    $url = 'localhost'; 
+    $headers = array(
+    'Authorization: Bearer TOKEN',
+    'Accept: text/html'
+    );
 
-    // Set options
-    curl_setopt($ch, CURLOPT_URL, "localhost");
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($ch, CURLOPT_HEADER, false); 
-    
-    // Execute
-    $result = curl_exec($ch);
-    
-    // Close curl session
-    curl_close($ch);
-    
-    // Output result
-    echo $result;
+    $context = stream_context_create([
+    'http' => [
+        'header' => $headers
+    ]
+    ]);
+
+    $response = file_get_contents($url, false, $context);
+
+    echo $response;
     
 }
 catch (\Throwable $t) {
