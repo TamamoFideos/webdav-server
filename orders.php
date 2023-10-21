@@ -2,11 +2,8 @@
 $id_category = $_GET['id'];
 $files = scandir("../client_".$id_category);
 foreach ($files as $file) {
-    echo $file;
     $filePath = $dirPath . '/' . $file;
-    if (is_file($filePath)) {
-        echo $file . "<br>";
-    }
+    echo $filePath;
 }
 ?>
     <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
