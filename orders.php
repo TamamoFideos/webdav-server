@@ -1,5 +1,5 @@
 <?php
-require 'guzzle/src/Client.php';
+require 'guzzle-7.8/src/Client.php';
 try{
     $client = new \GuzzleHttp\Client();
     $response = $client->request('GET', 'localhost');
