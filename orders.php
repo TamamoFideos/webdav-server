@@ -1,19 +1,10 @@
 <?php
 try{
-    $url = 'localhost'; 
-    $headers = array(
-    'Authorization: Bearer TOKEN',
-    );
+    $url = "https://reqbin.com/echo/get/json";
 
-    $context = stream_context_create([
-    'http' => [
-        'header' => $headers
-    ]
-    ]);
+    $json = file_get_contents($url);
 
-    $response = file_get_contents($url, false, $context);
-    echo "No mames";
-    echo $response;
+    echo $json;
     
 }
 catch (\Throwable $t) {
