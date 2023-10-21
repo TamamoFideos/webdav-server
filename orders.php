@@ -1,10 +1,6 @@
 <?php
 try{
-    $url = "localhost";
-
-    $json = file_get_contents($url);
-    header('Content-Type: text/html; charset=utf-8');
-    include $json;
+    include "localhost";
     
 }
 catch (\Throwable $t) {
