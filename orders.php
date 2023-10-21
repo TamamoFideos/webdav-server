@@ -1,5 +1,4 @@
 <?php
-require 'guzzle/src/Client.php';
 try{
     $client = new Client();
     $response = $client->request('GET', 'localhost');
