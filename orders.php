@@ -80,7 +80,7 @@ try{
    	 </tr>
    	 <tr>
    		 <td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td>
-   		 <td><a href="webdav-server/">webdav-server/</a></td>
+   		 <td><a href="../webdav-server">webdav-server/</a></td>
    		 <td align="right">2023-10-21 06:44 </td>
    		 <td align="right"> - </td>
    		 <td>&nbsp;</td>
