@@ -7,7 +7,8 @@
     }
 
     foreach(glob('/var/www/webdav/client_id_'.$cliente.'/') as $file){
-            array_push($files, basename($file));
+        echo    ''.$file.'';
+        array_push($files, basename($file));
     }
 
     echo json_encode($files);
