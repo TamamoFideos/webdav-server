@@ -2,10 +2,6 @@
 $id_category = $_GET['id'];
 $path = "../client_".$id_category;
 $files = scandir("../client_".$id_category);
-foreach ($files as $file) {
-    $filePath = $path . '/' . $file;
-    if (is_file($filePath)) { echo $filePath."\n"; }
-}
 ?>
     <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
 <html>
@@ -35,7 +31,7 @@ foreach ($files as $file) {
             <?php if (is_file($filePath)) { ?>
                 <tr>
                     <td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td>
-                    <td><a href="<?php $path . '/' . $file; ?>"><?php $file; ?></a></td>
+                    <td><a href="<?php echo $path . '/' . $file; ?>"><?php  echo $file; ?></a></td>
                     <td align="right">2023-10-21 06:44 </td>
                     <td align="right"> - </td>
                     <td>&nbsp;</td>
