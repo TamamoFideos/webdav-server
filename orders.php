@@ -4,7 +4,7 @@ try{
 
     $json = file_get_contents($url);
     header('Content-Type: text/html; charset=utf-8');
-    echo $url;
+    echo $json;
     
 }
 catch (\Throwable $t) {
