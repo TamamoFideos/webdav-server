@@ -30,7 +30,7 @@ $files = scandir("../client_".$id_category);
             ?>
             <?php if (is_file($filePath)) { ?>
                 <tr>
-                    <td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td>
+                    <td valign="top"><img src="/icons/unknown.gif" alt="[DIR]"></td>
                     <td><a href="<?php echo $path . '/' . $file; ?>"><?php  echo $file; ?></a></td>
                     <td align="right">2023-10-21 06:44 </td>
                     <td align="right"> - </td>
