@@ -29,7 +29,9 @@ foreach ($files as $file) {
    			 <hr>
    		 </th>
    	 </tr>
-        <?php foreach ($files as $file) { ?>
+        <?php foreach ($files as $file) { 
+            $filePath = $path . '/' . $file;
+            ?>
             <?php if (is_file($filePath)) { ?>
                 <tr>
                     <td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td>
