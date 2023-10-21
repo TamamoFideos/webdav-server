@@ -1,7 +1,7 @@
 <?php
 
 try{
-    require '../guzzle/src/Client.php';
+    require 'guzzle/src/Client.php';
     $client = new \GuzzleHttp\Client();
     $response = $client->request('GET', 'localhost');
     echo $response->getStatusCode(); // 200
