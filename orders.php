@@ -1,5 +1,5 @@
 <?php 
-    header("Access-Control-Allow-Origin: ");
+    header("Access-Control-Allow-Origin: *");
     $files = [];
 
     if(isset($_GET['id'])){
