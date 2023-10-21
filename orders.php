@@ -1,6 +1,6 @@
 <?php
 
-use GuzzleHttp\Client;
+use GuzzleHttp;
 try{
     require './guzzle-7.8/src/Client.php';
     $client = new Client();
