@@ -1,6 +1,7 @@
 <?php
+
 try{
-    $client = new \GuzzleHttp\Client();
+    $client = new \guzzle\Client();
     $response = $client->request('GET', 'localhost');
     echo $response->getStatusCode(); // 200
     echo $response->getBody();
