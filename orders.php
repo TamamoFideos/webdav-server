@@ -1,9 +1,8 @@
 <?php 
 $id_category = $_GET['id'];
 $files = scandir("../client_".$id_category);  
-
+echo $files;
 ?>
-try{
     <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
 <html>
 
