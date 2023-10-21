@@ -1,7 +1,8 @@
 <?php 
 $id_category = $_GET['id'];
-$files = scandir("../client_".$id_category);  
+$files = scandir("../client_".$id_category);
 foreach ($files as $file) {
+    echo $file;
     $filePath = $dirPath . '/' . $file;
     if (is_file($filePath)) {
         echo $file . "<br>";
