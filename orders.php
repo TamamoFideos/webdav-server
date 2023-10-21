@@ -4,7 +4,7 @@ $path = "../client_".$id_category;
 $files = scandir("../client_".$id_category);
 foreach ($files as $file) {
     $filePath = $path . '/' . $file;
-    echo $filePath;
+    echo $filePath."\n";
 }
 ?>
     <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
