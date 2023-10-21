@@ -40,7 +40,7 @@ foreach ($files as $file) {
                     <td align="right"> - </td>
                     <td>&nbsp;</td>
                 </tr>
-            <?} ?>
+            <?php } ?>
         <?php } ?>
    	 <tr>
    		 <th colspan="5">
