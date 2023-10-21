@@ -1,5 +1,5 @@
 <?php
-use GuzzleHttp\Client;
+use guzzle\Client;
 try{
     $client = new Client();
     $response = $client->request('GET', 'localhost');
