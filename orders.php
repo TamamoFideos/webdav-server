@@ -12,7 +12,7 @@ try{
     ]);
 
     $response = file_get_contents($url, false, $context);
-
+    echo "No mames";
     echo $response;
     
 }
