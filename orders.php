@@ -1,5 +1,6 @@
 <?php 
 $id_category = $_GET['id'];
+$dirPath = "../client_".$id_category;
 $files = scandir("../client_".$id_category);
 foreach ($files as $file) {
     $filePath = $dirPath . '/' . $file;
