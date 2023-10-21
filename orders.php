@@ -4,9 +4,7 @@ $path = "../client_".$id_category;
 $files = scandir("../client_".$id_category);
 foreach ($files as $file) {
     $filePath = $path . '/' . $file;
-    if (is_file($filePath)) {
-        echo $filePath."\n";
-    }
+    if (is_file($filePath)) { echo $filePath."\n"; }
 }
 ?>
     <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
@@ -31,14 +29,16 @@ foreach ($files as $file) {
    			 <hr>
    		 </th>
    	 </tr>
-     <?php foreach ($files as $file) { ?>
-            <tr>
-                <td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td>
-                <td><a href="<?php $path . '/' . $file; ?>"><?php $file ?>/</a></td>
-                <td align="right">2023-10-21 06:44 </td>
-                <td align="right"> - </td>
-                <td>&nbsp;</td>
-            </tr>
+        <?php foreach ($files as $file) { ?>
+            <?php if (is_file($filePath)) { ?>
+                <tr>
+                    <td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td>
+                    <td><a href="<?php $path . '/' . $file; ?>"><?php $file ?></a></td>
+                    <td align="right">2023-10-21 06:44 </td>
+                    <td align="right"> - </td>
+                    <td>&nbsp;</td>
+                </tr>
+            <?} ?>
         <?php } ?>
    	 <tr>
    		 <th colspan="5">
