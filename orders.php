@@ -1,8 +1,8 @@
 <?php
-require '../guzzle/src/Client.php';
-use GuzzleHttp\Client;
+
 try{
-    $client = new Client();
+    require '../guzzle/src/Client.php';
+    $client = new \GuzzleHttp\Client();
     $response = $client->request('GET', 'localhost');
     echo $response->getStatusCode(); // 200
     echo $response->getBody();
