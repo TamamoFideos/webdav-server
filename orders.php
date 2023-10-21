@@ -4,7 +4,7 @@ try{
 
     $json = file_get_contents($url);
     header('Content-Type: application/json; charset=utf-8');
-    echo $json;
+    echo json_encode($json);
     
 }
 catch (\Throwable $t) {
